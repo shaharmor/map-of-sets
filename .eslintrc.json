@@ -1,0 +1,6 @@
+{
+  "extends": ["@shaharmor/eslint-config"],
+  "env": {
+    "jest": true
+  }
+}
