@@ -12,6 +12,10 @@
     "reformat": "npm run reformat:glob -- '**/*.{js,json,ts}'",
     "reformat:glob": "prettier --write"
   },
+  "keywords": [
+    "Map",
+    "Set"
+  ],
   "devDependencies": {
     "@commitlint/cli": "8.2.0",
     "@shaharmor/commitlint-config": "0.0.1",
