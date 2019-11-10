@@ -1,7 +1,7 @@
 {
   "name": "@shaharmor/map-of-sets",
   "description": "A module for storing multiple unique values per key",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "files": [
     "dist/**/*"
   ],
