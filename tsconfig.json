@@ -2,12 +2,13 @@
   "extends": "@shaharmor/tsconfig",
   "compilerOptions": {
     "baseUrl": ".",
+    "declaration": true,
     "outDir": "dist",
     "types": ["jest"],
     "paths": {
       "@/*": ["src/*"]
     }
   },
-  "exclude": ["node_modules"],
-  "include": ["src/**/*.ts"]
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "src/**/*.test.ts"]
 }
