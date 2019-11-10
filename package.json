@@ -2,39 +2,39 @@
   "name": "@shaharmor/map-of-sets",
   "version": "0.2.0",
   "description": "A module for storing multiple unique values per key",
+  "keywords": [
+    "Map",
+    "Set"
+  ],
+  "homepage": "https://github.com/shaharmor/map-of-sets",
+  "bugs": {
+    "url": "https://github.com/shaharmor/map-of-sets/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shaharmor/map-of-sets.git"
+  },
   "license": "MIT",
+  "author": {
+    "name": "Shahar Mor"
+  },
   "files": [
     "dist/**/*"
   ],
   "main": "dist/map-of-sets.js",
   "types": "dist/map-of-sets.d.ts",
-  "author": {
-    "name": "Shahar Mor"
-  },
-  "homepage": "https://github.com/shaharmor/map-of-sets",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/shaharmor/map-of-sets.git"
-  },
-  "bugs": {
-    "url": "https://github.com/shaharmor/map-of-sets/issues"
-  },
-  "keywords": [
-    "Map",
-    "Set"
-  ],
   "scripts": {
     "build": "tsc",
     "lint": "npm run lint:tsc && npm run lint:eslint",
     "lint:all": "npm run all -- run lint",
-    "lint:tsc": "tsc -p tsconfig.json --noEmit",
     "lint:eslint": "npm run lint:eslint:glob -- '**/*.{js,ts}'",
     "lint:eslint:glob": "eslint --fix --max-warnings 0",
+    "lint:tsc": "tsc -p tsconfig.json --noEmit",
     "prepublish": "npm run build",
-    "test": "jest",
-    "test:watch": "npm run test -- '--watch'",
     "reformat": "npm run reformat:glob -- '**/*.{js,json,ts}'",
-    "reformat:glob": "prettier --write"
+    "reformat:glob": "prettier --write",
+    "test": "jest",
+    "test:watch": "npm run test -- '--watch'"
   },
   "devDependencies": {
     "@commitlint/cli": "8.2.0",
@@ -53,6 +53,7 @@
     "jest": "24.9.0",
     "lint-staged": "9.4.2",
     "prettier": "1.19.1",
+    "sort-package-json": "1.23.1",
     "ts-jest": "24.1.0",
     "tsconfig-paths": "3.9.0",
     "typescript": "3.7.2"
