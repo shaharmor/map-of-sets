@@ -41,7 +41,7 @@
     "@shaharmor/commitlint-config": "0.0.2",
     "@shaharmor/eslint-config": "1.2.1",
     "@shaharmor/prettier-config": "1.1.1",
-    "@shaharmor/tsconfig": "0.1.0",
+    "@shaharmor/tsconfig": "0.1.1",
     "@types/jest": "24.0.22",
     "@typescript-eslint/eslint-plugin": "2.6.1",
     "eslint": "6.6.0",
