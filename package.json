@@ -53,7 +53,7 @@
     "jest": "24.9.0",
     "lint-staged": "9.4.3",
     "prettier": "1.19.1",
-    "sort-package-json": "1.23.1",
+    "sort-package-json": "1.27.0",
     "ts-jest": "24.2.0",
     "tsconfig-paths": "3.9.0",
     "typescript": "3.7.2"
