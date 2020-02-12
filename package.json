@@ -1,6 +1,6 @@
 {
   "name": "@shaharmor/map-of-sets",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "A module for storing multiple unique values per key",
   "keywords": [
     "Map",
