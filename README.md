@@ -3,14 +3,14 @@
 ## Install
 
 ```
-$ npm install map-of-sets
+$ npm install @shaharmor/map-of-sets
 ```
 
 
 ## Usage
 
 ```ts
-import {MapOfSets} from 'map-of-sets';
+import {MapOfSets} from '@shaharmor/map-of-sets';
 
 const mapOfSets = new MapOfSets<string, string>();
 mapOfSets.add('key1', 'value1');
@@ -23,7 +23,7 @@ mapOfSets.toArray('key1'); // ['value1']
 
 ### MapOfSets<A, B>()
 
-Returns a new `MapOfSets` instance, where the type of the maps keys is `A`, and the type of the sets values is `B`. 
+Returns a new `MapOfSets` instance, where the type of the maps keys is `A`, and the type of the sets values is `B`.
 
 #### .add(key, value)
 

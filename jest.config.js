@@ -1,11 +1,12 @@
-// eslint-disable-next-line @typescript-eslint/no-var-requires, import/no-extraneous-dependencies
 const { pathsToModuleNameMapper } = require('ts-jest/utils');
-// eslint-disable-next-line @typescript-eslint/no-var-requires
+const mergeOptions = require('merge-options');
+const jestTSJestPreset = require('ts-jest/jest-preset');
 const { compilerOptions } = require('./tsconfig');
 
-module.exports = {
-  preset: 'ts-jest',
-  testEnvironment: 'node',
-  moduleFileExtensions: ['ts', 'js', 'json', 'node'],
-  moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, { prefix: '<rootDir>/' }),
-};
+module.exports = mergeOptions(
+  {
+    testEnvironment: 'node',
+    moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths, { prefix: '<rootDir>/' }),
+  },
+  jestTSJestPreset
+);
