@@ -2,10 +2,10 @@ export class MapOfSets<A, B> {
   private readonly map: Map<A, Set<B>>;
 
   constructor() {
-    this.map = new Map();
+    this.map = new Map<A, Set<B>>();
   }
 
-  public add(a: A, b: B) {
+  public add(a: A, b: B): void {
     let set = this.map.get(a);
     if (!set) {
       set = new Set();
@@ -14,7 +14,7 @@ export class MapOfSets<A, B> {
     set.add(b);
   }
 
-  public has(a: A, b: B) {
+  public has(a: A, b: B): boolean {
     const set = this.map.get(a);
     if (!set) {
       return false;
@@ -22,7 +22,7 @@ export class MapOfSets<A, B> {
     return set.has(b);
   }
 
-  public delete(a: A, b: B) {
+  public delete(a: A, b: B): void {
     const set = this.map.get(a);
     if (!set) {
       return;
@@ -33,7 +33,7 @@ export class MapOfSets<A, B> {
     }
   }
 
-  public toArray(a: A) {
+  public toArray(a: A): B[] {
     const set = this.map.get(a);
     if (!set) {
       return [];
